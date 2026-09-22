@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "dataset_name": "nyu-mll/glue",
+  "dataset_config": "sst2",
+  "dataset_split": "validation",
+  "sample_count": 500,
+  "batch_size": 1,
+  "max_length": 128,
+  "warmup_samples": 20,
+  "repetitions": 3,
+  "country_iso_code": "IND",
+  "models": {
+    "OPT-A": {
+      "display_name": "DistilBERT",
+      "model_id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+    },
+    "OPT-B": {
+      "display_name": "BERT-base",
+      "model_id": "textattack/bert-base-uncased-SST-2"
+    },
+    "OPT-C": {
+      "display_name": "MiniLM-L6",
+      "model_id": "philschmid/MiniLM-L6-H384-uncased-sst2"
+    }
+  }
+}

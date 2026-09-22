@@ -1,0 +1,86 @@
+{
+    "status": "success",
+    "selected": {
+        "option_id": "OPT-C",
+        "model": "MiniLM-L6",
+        "region": "India",
+        "accuracy": 0.906,
+        "latency_ms": 8.645671133330325,
+        "energy_per_request_kwh": 1.1247874363514808e-07,
+        "training_kgco2e": 0.37632000000000004,
+        "inference_kgco2e": 3.4485982798536403,
+        "storage_kgco2e": 0.252,
+        "networking_kgco2e": 16.8,
+        "retraining_kgco2e": 0.37632000000000004,
+        "hardware_kgco2e": 30.414220482713635,
+        "total_kgco2e": 51.66745876256728,
+        "low_kgco2e": 27.030786308092583,
+        "high_kgco2e": 100.14401231834367
+    },
+    "eligible_options": [
+        {
+            "option_id": "OPT-A",
+            "model": "DistilBERT",
+            "region": "India",
+            "accuracy": 0.908,
+            "latency_ms": 20.063820666672353,
+            "energy_per_request_kwh": 2.5619104994053333e-07,
+            "training_kgco2e": 0.37632000000000004,
+            "inference_kgco2e": 7.854817591176752,
+            "storage_kgco2e": 0.252,
+            "networking_kgco2e": 16.8,
+            "retraining_kgco2e": 0.37632000000000004,
+            "hardware_kgco2e": 30.414220482713635,
+            "total_kgco2e": 56.073678073890385,
+            "low_kgco2e": 30.492815766989313,
+            "high_kgco2e": 106.01897140010782
+        },
+        {
+            "option_id": "OPT-B",
+            "model": "BERT-base",
+            "region": "India",
+            "accuracy": 0.918,
+            "latency_ms": 39.60146880000442,
+            "energy_per_request_kwh": 5.123595664636e-07,
+            "training_kgco2e": 0.37632000000000004,
+            "inference_kgco2e": 15.708944307773974,
+            "storage_kgco2e": 0.252,
+            "networking_kgco2e": 16.8,
+            "retraining_kgco2e": 0.37632000000000004,
+            "hardware_kgco2e": 30.414220482713635,
+            "total_kgco2e": 63.927804790487606,
+            "low_kgco2e": 36.663915330029994,
+            "high_kgco2e": 116.49114035557078
+        },
+        {
+            "option_id": "OPT-C",
+            "model": "MiniLM-L6",
+            "region": "India",
+            "accuracy": 0.906,
+            "latency_ms": 8.645671133330325,
+            "energy_per_request_kwh": 1.1247874363514808e-07,
+            "training_kgco2e": 0.37632000000000004,
+            "inference_kgco2e": 3.4485982798536403,
+            "storage_kgco2e": 0.252,
+            "networking_kgco2e": 16.8,
+            "retraining_kgco2e": 0.37632000000000004,
+            "hardware_kgco2e": 30.414220482713635,
+            "total_kgco2e": 51.66745876256728,
+            "low_kgco2e": 27.030786308092583,
+            "high_kgco2e": 100.14401231834367
+        }
+    ],
+    "rejected_options": [],
+    "constraints": {
+        "min_accuracy": 0.9,
+        "max_latency_ms": 200.0,
+        "max_carbon_kgco2e": null
+    },
+    "original_request": "I need at least 90% accuracy and latency below 200 ms.",
+    "processing": {
+        "requirements_parser": "Local Qwen3 AI + numeric validation",
+        "decision_method": "Deterministic constraint filtering and minimum-carbon selection",
+        "explanation_generator": "Local Qwen3 AI"
+    },
+    "explanation": "All eligible options meet the sustainability criteria:  \n- **Accuracy**: MiniLM-L6 (0.906) exceeds the minimum requirement of 0.9, while DistilBERT (0.908) and BERT-base (0.918) are slightly closer to the upper bound.  \n- **Latency**: MiniLM-L6 (8.64 ms) is well under the 200 ms threshold, making it efficient for real-time applications.  \n- **Carbon footprint**: MiniLM-L6 (51.67 kgCO\u2082e) falls within the allowed range, while OPT-A (56.07 kgCO\u2082e) and OPT-B (63.93 kgCO\u2082e) are also within limits.  \nAll three models comply with the constraints, with MiniLM-L6 offering the best balance of accuracy, latency, and carbon efficiency."
+}

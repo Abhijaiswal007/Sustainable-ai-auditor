@@ -1,0 +1,4 @@
+experiment_id,option_id,model_name,model_id,accuracy,accuracy_std,latency_ms,latency_std_ms,energy_kwh,energy_std_kwh,energy_per_request_kwh,total_predictions,device,device_name,runs
+EXP-001,OPT-A,DistilBERT,distilbert/distilbert-base-uncased-finetuned-sst-2-english,0.908,0.0,20.063820666672353,0.13616660171626938,0.00012809552497026667,1.235249200022142e-06,2.5619104994053333e-07,500,cuda,NVIDIA GeForce RTX 2050,3
+EXP-001,OPT-B,BERT-base,textattack/bert-base-uncased-SST-2,0.918,0.0,39.60146880000442,0.17842236216887142,0.0002561797832318,2.2836594944645506e-06,5.123595664636e-07,500,cuda,NVIDIA GeForce RTX 2050,3
+EXP-001,OPT-C,MiniLM-L6,philschmid/MiniLM-L6-H384-uncased-sst2,0.906,0.0,8.645671133330325,0.1615892525897678,5.6239371817574046e-05,2.710390821107005e-06,1.1247874363514808e-07,500,cuda,NVIDIA GeForce RTX 2050,3

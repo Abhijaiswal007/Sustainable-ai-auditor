@@ -1,0 +1,4 @@
+experiment_id,option_id,model_name,energy_per_request_kwh,measurement_device,measurement_sample_count,runs
+EXP-001,OPT-A,DistilBERT,2.5619104994053333e-07,NVIDIA GeForce RTX 2050,500,3
+EXP-001,OPT-B,BERT-base,5.123595664636e-07,NVIDIA GeForce RTX 2050,500,3
+EXP-001,OPT-C,MiniLM-L6,1.1247874363514808e-07,NVIDIA GeForce RTX 2050,500,3

@@ -1,0 +1,4 @@
+option_id,model,region,training_kgco2e,inference_kgco2e,storage_kgco2e,networking_kgco2e,retraining_kgco2e,hardware_kgco2e,total_kgco2e,low_kgco2e,high_kgco2e
+OPT-A,DistilBERT,India,3.0,25.0,1.0,2.0,4.0,5.0,40.0,32.0,50.0
+OPT-B,BERT-base,India,8.0,50.0,1.0,2.0,10.0,8.0,79.0,65.0,95.0
+OPT-C,MiniLM,India,2.0,18.0,1.0,2.0,3.0,4.0,30.0,24.0,38.0

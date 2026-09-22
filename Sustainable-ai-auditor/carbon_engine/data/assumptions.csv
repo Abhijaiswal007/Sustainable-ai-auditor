@@ -1,0 +1,6 @@
+parameter,low,base,high,unit,source_url
+pue,1.10,1.20,1.40,ratio,DEMO_REPLACE_WITH_FINAL_SOURCE
+storage_energy,0.0003,0.0005,0.0008,kWh_per_GB_month,DEMO_REPLACE_WITH_FINAL_SOURCE
+network_energy,0.01,0.02,0.04,kWh_per_GB,DEMO_REPLACE_WITH_FINAL_SOURCE
+gpu_utilization,0.60,0.80,1.00,ratio,DEMO_ASSUMPTION
+hardware_lifetime_utilization,0.90,0.70,0.50,ratio,DEMO_ASSUMPTION
