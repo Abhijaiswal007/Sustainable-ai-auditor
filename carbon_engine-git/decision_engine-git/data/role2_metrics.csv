@@ -1,0 +1,4 @@
+option_id,model,accuracy,latency_ms,measured_energy_kwh
+OPT-A,DistilBERT,0.91,85,0.020
+OPT-B,BERT-base,0.94,160,0.050
+OPT-C,MiniLM,0.89,55,0.015

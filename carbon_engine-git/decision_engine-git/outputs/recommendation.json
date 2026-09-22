@@ -1,0 +1,77 @@
+{
+    "status": "success",
+    "selected": {
+        "option_id": "OPT-A",
+        "model": "DistilBERT",
+        "region": "India",
+        "accuracy": 0.91,
+        "latency_ms": 85.0,
+        "measured_energy_kwh": 0.02,
+        "training_kgco2e": 3.0,
+        "inference_kgco2e": 25.0,
+        "storage_kgco2e": 1.0,
+        "networking_kgco2e": 2.0,
+        "retraining_kgco2e": 4.0,
+        "hardware_kgco2e": 5.0,
+        "total_kgco2e": 40.0,
+        "low_kgco2e": 32.0,
+        "high_kgco2e": 50.0
+    },
+    "eligible_options": [
+        {
+            "option_id": "OPT-A",
+            "model": "DistilBERT",
+            "region": "India",
+            "accuracy": 0.91,
+            "latency_ms": 85.0,
+            "measured_energy_kwh": 0.02,
+            "training_kgco2e": 3.0,
+            "inference_kgco2e": 25.0,
+            "storage_kgco2e": 1.0,
+            "networking_kgco2e": 2.0,
+            "retraining_kgco2e": 4.0,
+            "hardware_kgco2e": 5.0,
+            "total_kgco2e": 40.0,
+            "low_kgco2e": 32.0,
+            "high_kgco2e": 50.0
+        },
+        {
+            "option_id": "OPT-B",
+            "model": "BERT-base",
+            "region": "India",
+            "accuracy": 0.94,
+            "latency_ms": 160.0,
+            "measured_energy_kwh": 0.05,
+            "training_kgco2e": 8.0,
+            "inference_kgco2e": 50.0,
+            "storage_kgco2e": 1.0,
+            "networking_kgco2e": 2.0,
+            "retraining_kgco2e": 10.0,
+            "hardware_kgco2e": 8.0,
+            "total_kgco2e": 79.0,
+            "low_kgco2e": 65.0,
+            "high_kgco2e": 95.0
+        }
+    ],
+    "rejected_options": [
+        {
+            "option_id": "OPT-C",
+            "model": "MiniLM",
+            "reasons": [
+                "accuracy 89.0% is below the required 90.0%"
+            ]
+        }
+    ],
+    "constraints": {
+        "min_accuracy": 0.9,
+        "max_latency_ms": 200.0,
+        "max_carbon_kgco2e": null
+    },
+    "original_request": "I need at least 90% accuracy and latency below 200 ms.",
+    "processing": {
+        "requirements_parser": "Local Qwen3 AI + numeric validation",
+        "decision_method": "Deterministic constraint filtering and minimum-carbon selection",
+        "explanation_generator": "Local Qwen3 AI"
+    },
+    "explanation": "The selected option **OPT-A (DistilBERT)** was chosen due to its high accuracy (91% \u2265 90%), low latency (85 ms \u2264 200 ms), and moderate carbon footprint (40 kgCO\u2082e, within low-to-high range). It outperforms **OPT-B (BERT-base)**, which has higher accuracy (94%) but worse latency (160 ms) and significantly higher carbon (79 kgCO\u2082e). **OPT-C (MiniLM)** was rejected because its accuracy (89%) fell below the required 90% threshold. The trade-off prioritizes efficiency and sustainability, balancing performance and environmental impact."
+}
