@@ -1,0 +1,4 @@
+region,low_gco2_per_kwh,base_gco2_per_kwh,high_gco2_per_kwh,year,source_url
+India,600,700,800,DEMO,REPLACE_WITH_FINAL_SOURCE
+United States,300,400,500,DEMO,REPLACE_WITH_FINAL_SOURCE
+France,30,60,100,DEMO,REPLACE_WITH_FINAL_SOURCE
