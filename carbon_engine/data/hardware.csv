@@ -1,4 +1,0 @@
-device,power_w,embodied_low_kg,embodied_base_kg,embodied_high_kg,lifetime_years,source_url
-NVIDIA T4,70,700,1000,1300,4,DEMO_REPLACE_WITH_FINAL_SOURCE
-NVIDIA A100,400,1000,1500,2000,4,DEMO_REPLACE_WITH_FINAL_SOURCE
-CPU Server,200,600,900,1200,5,DEMO_REPLACE_WITH_FINAL_SOURCE
